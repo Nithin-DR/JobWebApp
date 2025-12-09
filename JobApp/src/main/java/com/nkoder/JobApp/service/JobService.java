@@ -15,17 +15,18 @@ public class JobService {
 
     // method to add a jobPost
     public void addJob(JobPost jobPost) {
-        repo.addJob(jobPost);
+        repo.addJob(jobPost); 
 
     }
 
 
     //method to return all JobPosts
     public List<JobPost> getAllJobs() {
-        return repo.getAllJobs();
+        return repo.getAllJobs();  // calls method from repository
 
 
     }
 
 
 }
+
