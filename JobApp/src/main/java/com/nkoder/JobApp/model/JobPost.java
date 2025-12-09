@@ -7,9 +7,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Data
-@NoArgsConstructor
-//@AllArgsConstructor
+@Data  //Includes @Getter, @Setter, @ToString, @EqualsAndHashCode, @RequiredArgsConstructor
+@NoArgsConstructor //automatically generates a constructor with no arguments (a default constructor)
+//@AllArgsConstructor  //This annotation automatically generates a constructor with arguments for all fields in the class, except for static fields and initialized final fields.
 @Component
 public class JobPost {
 
@@ -31,5 +31,6 @@ public class JobPost {
 
 
 }
+
 
 
